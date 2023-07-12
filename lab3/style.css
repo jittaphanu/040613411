@@ -1,0 +1,7 @@
+.text{
+    text-align: center;
+}
+.text ol{
+    display: inline-block;
+    text-align: left;
+}
