@@ -1,0 +1,51 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<style>
+		.container { 
+			display: flex; 
+		}
+		menu2 {
+			background-color: black;
+			color: white;
+			text-align: center;
+			width: 30%;
+			order: 1;
+		}
+		content2 {
+			background-color: gainsboro;
+			width: 60%;
+			order: 2;
+		}
+		ads {
+			background-color: cornflowerblue;
+			width: 10%;
+			order: 3;
+		}
+		
+		@media screen and (max-width: 600px) {
+			.container {
+				flex-direction: column;
+			}
+			menu2 { 
+				width: auto; 
+			}
+			content2 { 
+				width: auto; 
+				text-align: center;
+			}
+			ads { 
+				width: auto; 
+				text-align: center;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<menu2>Menu1<br>Menu2<br>Menu3<br></menu2>
+		<content2>In publishing, art, and communication, … as speech, writing or any of various arts".</content2>
+		<ads>advertising<br>advertising<br>advertising<br></ads>
+	</div>
+</body>
+</html>
