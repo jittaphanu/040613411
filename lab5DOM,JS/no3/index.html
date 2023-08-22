@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+                let student = [
+            {
+                fullname: 'นายตั้งใจ เรียนมาก',
+                age: 18,
+                year: 1,
+                gpa: 3.40,
+                help: true
+            },
+            {
+                fullname: 'นายสง่างาน ตลอดมา',
+                age: 19,
+                year: 2,
+                gpa: 3.00,
+                help: false
+            },
+            {
+                fullname: 'นางสาวใสใ่จ ดีงาม',
+                age: 20,
+                year: 3,
+                gpa: 2.90,
+                help: true
+            },
+            
+        ]
+        for (let i = 0; i < student.length; i++) {
+            
+            let h
+            let g = 'เกรดเฉลี่ยไม่ถึงเกณฆ์และ'
+            
+            if (student[i].help == false) {
+                h = 'ยังไม่ได้ช่วยงานภาควิชา'
+            }else{
+                h = 'ช่วยงานภาควิชาด้วย'
+            }
+            if (student[i].gpa >= 2.75) {
+                g = 'เกรดเฉลี่ยถึงเกณฑ์และ'
+            }
+
+            console.log('ชั้นปีที่'+student[i].year)
+            if (student[i].gpa >= 3.20) {
+                
+                console.log(student[i].fullname+' ได้รับทุน เนื่องจาก'+g+h)
+            }
+            else if (student[i].year >= 2 && student[i].help==true && student[i].gpa >= 2.75) {
+                
+                console.log(student[i].fullname+' ได้รับทุน เนื่องจาก'+g+h)
+            }else{
+                console.log(student[i].fullname+' ไม่ได้รับทุน เนื่องจาก'+g+h)
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

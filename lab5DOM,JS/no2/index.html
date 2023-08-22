@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function type(){
+            let Name = document.getElementById("user");
+            let Age = document.getElementById("old");
+            let BD = document.getElementById("bd");
+            Name.style.color = "green"
+            Age.style.color = "green"
+            BD.style.color = "green"
+        }
+        window.onload = function(){
+            let fo = document.getElementById("form1");
+            fo.onmouseout = type;
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <form id="form1">
+        Name: <input type="text" id="user"><br>
+        Age: <input type="text" id="old"><br>
+        Birthdate: <input type="text" id="bd"><br>
+    </form>
+</body>
+</html>
