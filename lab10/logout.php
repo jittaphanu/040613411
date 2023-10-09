@@ -1,0 +1,12 @@
+<?php
+session_start();
+$params = session_get_cookie_params();
+setcookie(session_name(),'',time() -42000,
+    $params["path"],$params["domain"],
+    $params["secure"],$params["httponly"]
+);
+session_destroy();
+?>
+ออกจากระบบสำเร็จ<br>
+หากต้องการเข้าสู่ระบบอีกครั้งโปรดคลิก
+<a href='login-form.php'>เข้าสู่ระบบ</a>
